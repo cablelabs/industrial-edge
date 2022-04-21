@@ -6,25 +6,25 @@ global:
 
   options:
     useCSV: False
-    syncPolicy: Manual
+    syncPolicy: Automatic
     installPlanApproval: Automatic
 
   imageregistry:
-    account: PLAINTEXT
+    account: cl_snaps
     hostname: quay.io
     type: quay
 
   git:
     hostname: github.com
-    account: PLAINTEXT
-    username: PLAINTEXT
-    email: SOMEWHERE@EXAMPLE.COM
+    account: cablelabs
+    username: akadam
+    email: a.kadam@cablelabs.com
     dev_revision: main
 
   s3:
     bucket:
-      name: S3BUCKETNAME
-      region: AWSREGION
+      name: industrial-iot-s3-bucket
+      region: US West (Oregon) us-west-2
       message:
         aggregation:
           count: 100
