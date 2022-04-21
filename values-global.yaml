@@ -6,7 +6,7 @@ global:
 
   options:
     useCSV: False
-    syncPolicy: Automatic
+    syncPolicy: Manual
     installPlanApproval: Automatic
 
   imageregistry:
