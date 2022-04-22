@@ -24,7 +24,7 @@ global:
   s3:
     bucket:
       name: industrial-iot-bucket
-      region: US East (N. Virginia) us-east-1
+      region: us-east-1
       message:
         aggregation:
           count: 100
