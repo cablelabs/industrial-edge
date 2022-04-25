@@ -6,6 +6,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
+  storageClassName: ocs-external-storagecluster-cephfs
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
