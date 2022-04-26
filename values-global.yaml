@@ -17,7 +17,7 @@ global:
   git:
     hostname: github.com
     account: cablelabs
-    username: akadam
+    username: cablelabs
     email: a.kadam@cablelabs.com
     dev_revision: main
 
