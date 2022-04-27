@@ -10,7 +10,7 @@ spec:
   - name: 0.3.1
     from:
       kind: DockerImage
-      name: quay.io/hybridcloudpatterns/iot-frontend:0.3.1
+      name: quay.io/hybridcloudpatterns/iot-frontend:latest
     importPolicy: {}
     referencePolicy:
       type: Local
