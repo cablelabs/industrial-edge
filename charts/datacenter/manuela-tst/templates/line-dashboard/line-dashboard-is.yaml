@@ -7,10 +7,10 @@ spec:
   lookupPolicy:
     local: true
   tags:
-  - name: latest
+  - name: 0.3.1
     from:
       kind: DockerImage
-      name: quay.io/hybridcloudpatterns/iot-frontend:latest
+      name: quay.io/hybridcloudpatterns/iot-frontend:0.3.1
     importPolicy: {}
     referencePolicy:
       type: Local
