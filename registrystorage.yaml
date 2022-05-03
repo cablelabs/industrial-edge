@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    imageregistry.openshift.io: "true"
+  creationTimestamp: "2022-04-28T18:59:29Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:imageregistry.openshift.io: {}
+      f:spec:
+        f:accessModes: {}
+        f:resources:
+          f:requests:
+            .: {}
+            f:storage: {}
+        f:volumeMode: {}
+    manager: cluster-image-registry-operator
+    operation: Update
+    time: "2022-04-28T18:59:29Z"
+  name: image-registry-storage
+  namespace: openshift-image-registry
+  resourceVersion: "14523824"
+  uid: 87f7dea9-4138-4162-b12e-23dd384c11a9
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 100Gi
+  volumeMode: Filesystem
+  storageClassName: ocs-external-storagecluster-cephfs
+status:
+  phase: Pending
