@@ -63,6 +63,7 @@ spec:
                 + secret
                 + region;
 
+                LOGGER.info("Store Vibration ");
                 from("kafka:{{ .Values.kafka.broker.topic.vibration }}?brokers={{ .Values.kafka.broker.uri }}")
                     .convertBodyTo(String.class)
                     .aggregate(simple("true"), new GroupedBodyAggregationStrategy()).completionSize(s3_message_aggregation_count)
