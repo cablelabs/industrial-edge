@@ -30,7 +30,7 @@ clusterGroup:
   - name: seldon-operator
     namespace: manuela-ml-workspace
     source: community-operators
-    csv: seldon-operator.v1.12.0
+    csv: seldon-operator.v1.13.0
 
   - name: opendatahub-operator
     source: community-operators
