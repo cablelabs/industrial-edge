@@ -59,7 +59,7 @@ spec:
                 String key = "accessKey=" + s3_accessKey;
                 String secret="&secretKey=" + s3_secretKey;
                 String region = "&region=" + s3_region;
-            	String s3params = key
+                String s3params = key
                 + secret
                 + region;
 
@@ -88,7 +88,7 @@ spec:
                 String key = "accessKey=" + s3_accessKey;
                 String secret="&secretKey=" + s3_secretKey;
                 String region = "&region=" + s3_region;
-            	String s3params = key
+                String s3params = key
                    + secret
                    + region;
                 from("kafka:{{ .Values.kafka.broker.topic.temperature }}?brokers={{ .Values.kafka.broker.uri }}")
