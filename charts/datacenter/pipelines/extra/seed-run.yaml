@@ -10,6 +10,8 @@ spec:
   pipelineRef:
     name: seed
   serviceAccountName: pipeline
+  podTemplate:
+    dnsPolicy: Default
   timeout: 1h0m0s
   workspaces:
   - configMap:
