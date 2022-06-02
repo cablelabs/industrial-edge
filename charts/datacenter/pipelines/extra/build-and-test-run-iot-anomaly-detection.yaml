@@ -10,6 +10,8 @@ spec:
   pipelineRef:
     name: build-and-test-iot-anomaly-detection
   serviceAccountName: pipeline
+  podTemplate:
+      dnsPolicy: Default
   timeout: 1h0m0s
   workspaces:
     - name: gitrepos

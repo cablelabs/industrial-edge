@@ -10,6 +10,8 @@ spec:
   pipelineRef:
     name: build-and-test-iot-consumer
   serviceAccountName: pipeline
+  podTemplate:
+      dnsPolicy: Defaultv
   timeout: 1h0m0s
   workspaces:
     - name: gitrepos

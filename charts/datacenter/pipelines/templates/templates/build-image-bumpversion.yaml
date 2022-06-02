@@ -8,8 +8,6 @@ objects:
   metadata:
     generateName: build-image-bumpversion-
   spec:
-    podTemplate:
-      dnsPolicy: Default
     pipelineRef:
       name: build-images
     workspaces:

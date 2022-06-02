@@ -6,6 +6,8 @@ spec:
   pipelineRef:
     name: seed-iot-consumer
   serviceAccountName: pipeline
+  podTemplate:
+      dnsPolicy: Default
   timeout: 1h0m0s
   workspaces:
   - configMap:
