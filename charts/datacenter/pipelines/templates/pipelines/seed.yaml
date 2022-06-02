@@ -3,11 +3,6 @@ kind: Pipeline
 metadata:
   name: seed
 spec:
-  podTemplate: 
-    dnsPolicy: Default
-    dnsConfig:
-      nameservers: 
-        - 8.8.8.8
   workspaces:
   - name: gitrepos
   - name: config
