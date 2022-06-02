@@ -8,6 +8,8 @@ objects:
   metadata:
     generateName: build-and-test-iot-anomaly-detection-
   spec:
+    podTemplate:
+      dnsPolicy: Default
     pipelineRef:
       name: build-and-test
     workspaces:
