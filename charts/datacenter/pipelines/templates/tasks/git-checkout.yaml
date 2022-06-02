@@ -3,6 +3,8 @@ kind: Task
 metadata:
   name: git-checkout
 spec:
+  podTemplate:
+    dnsPolicy: Default
   workspaces:
   - name: gitrepos
     description: The git repo will be cloned onto the volume backing this workspace

@@ -3,6 +3,8 @@ kind: Task
 metadata:
   name: github-add-pull-request
 spec:
+  podTemplate:
+    dnsPolicy: Default
   workspaces:
   - name: config
   - name: github-secret
